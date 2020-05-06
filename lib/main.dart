@@ -7,12 +7,24 @@ void main() {
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
+    return MaterialApp(
+      home: MyHome(),
+    );
+  }
+}
 
-          ],
+class MyHome extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Text('flutter market')
+            ],
+          ),
         ),
       ),
     );
